@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 28px;
+      background: #111827;
+      color: #e5e7eb;
+    }
+    nav a {
+      color: #e5e7eb;
+      text-decoration: none;
+      margin-left: 16px;
+      font-weight: 600;
+    }
+    nav a:hover { color: #60a5fa; }
+    .quick-nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    .quick-nav a {
+      text-decoration: none;
+      background: #2563eb;
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.2s ease;
+    }
+    .quick-nav a:hover { background: #1d4ed8; }
+    .wrapper {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    h1 { margin-bottom: 12px; }
+    p { line-height: 1.6; color: #475569; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      padding: 16px;
+    }
+    .card h3 { margin-top: 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>About This Demo</strong></div>
+    <nav>
+      <a href="/home">Home</a>
+      <a href="/about">About</a>
+      <a href="/user">User</a>
+      <a href="/product">Product</a>
+      <a href="/signup">Signup</a>
+      <a href="/login">Login</a>
+    </nav>
+  </header>
+
+  <main class="wrapper">
+    <h1>About the forms</h1>
+    <p>
+      This project collects a few simple HTML form examples you can reuse or
+      extend. Each page keeps the same minimal styling so you can focus on
+      structure and validation logic as you connect them to your backend.
+    </p>
+    <div class="quick-nav">
+      <a href="/home">Home</a>
+      <a href="/about">About</a>
+      <a href="/user">User</a>
+      <a href="/product">Product</a>
+      <a href="/nakuri">Nakuri</a>
+      <a href="/signup">Signup</a>
+      <a href="/login">Login</a>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Lightweight</h3>
+        <p>Plain HTML and CSS—no frameworks required—so it loads fast and stays easy to tweak.</p>
+      </div>
+      <div class="card">
+        <h3>Consistent layout</h3>
+        <p>Shared card styling across all forms keeps the experience predictable.</p>
+      </div>
+      <div class="card">
+        <h3>Ready to wire up</h3>
+        <p>Hook these forms to your Express routes, validation, and database calls as needed.</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

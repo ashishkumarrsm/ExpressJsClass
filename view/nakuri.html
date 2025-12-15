@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nakuri Profile Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9fafb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+    .quick-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 16px 0;
+    }
+    .quick-nav a {
+      text-decoration: none;
+      background: #2563eb;
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.2s ease;
+    }
+    .quick-nav a:hover { background: #1d4ed8; }
+    .card {
+      background: #ffffff;
+      padding: 24px;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      width: 330px;
+    }
+    h1 {
+      margin: 0 0 16px;
+      font-size: 22px;
+      text-align: center;
+      color: #111827;
+    }
+    label {
+      display: block;
+      margin: 10px 0 6px;
+      font-weight: 600;
+      color: #374151;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 14px;
+      box-sizing: border-box;
+      resize: vertical;
+    }
+    textarea { min-height: 90px; }
+    button {
+      width: 100%;
+      margin-top: 16px;
+      padding: 12px;
+      background: #6366f1;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    button:hover { background: #4f46e5; }
+  </style>
+</head>
+<body>
+  <div class="quick-nav">
+    <a href="/home">Home</a>
+    <a href="/about">About</a>
+    <a href="/user">User</a>
+    <a href="/product">Product</a>
+    <a href="/nakuri">Nakuri</a>
+    <a href="/signup">Signup</a>
+    <a href="/login">Login</a>
+  </div>
+  <form class="card">
+    <h1>Nakuri Profile</h1>
+    <label for="profilename">Profile Name</label>
+    <input id="profilename" name="profilename" type="text" placeholder="Enter profile name" required>
+
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" placeholder="Enter email" required>
+
+    <label for="skills">Skills</label>
+    <textarea id="skills" name="skills" placeholder="List your skills" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
+
